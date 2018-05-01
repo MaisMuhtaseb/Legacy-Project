@@ -26,11 +26,12 @@ var jobsSchema = mongoose.Schema({
   {
     type:Date,
     default:Date.now
-  }
+  },
+  salary: String
 });
 
 
-/////Jobs Model
+//// Model
 var Jobs = mongoose.model('Jobs', jobsSchema);
 
 var createJob = function(userName,data, callback){
